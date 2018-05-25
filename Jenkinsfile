@@ -1,9 +1,10 @@
 node {
     stage('Build') {
         echo 'Building....'
+        checkout scm
     }
     stage('Test') {
-        echo 'Building....'
+        echo 'Testing....'
     }
     stage('Deploy') {
         echo 'Deploying....'
