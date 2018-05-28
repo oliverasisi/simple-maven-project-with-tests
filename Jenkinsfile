@@ -3,7 +3,7 @@ node {
         echo 'Building....'
         env.PATH = "${tool 'Maven3'}/bin:${env.PATH}"
         checkout scm
-        sh 'mvn clean package'
+        bat 'mvn clean package'
     }
     stage('Test') {
         echo 'Testing....'
