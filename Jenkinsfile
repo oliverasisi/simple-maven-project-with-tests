@@ -4,7 +4,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'hello'
-                bat 'echo  myCustomEnvVar=$myCustomEnvVar'
+               // bat 'echo  myCustomEnvVar=$myCustomEnvVar'
             }
         }
     }
